@@ -52,6 +52,9 @@ def testnote(notelistx,note):
 for i in range(length):
     for j in range(lines):
         if(i == 0 or i % spacing[j] == 0):
+            currentlyplaying[j] = None
+    for j in range(lines):
+        if(i == 0 or i % spacing[j] == 0):
             while(True):
                 trynote = random.choice(choices)
                 if(testnote(currentlyplaying,trynote)):
